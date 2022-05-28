@@ -4,7 +4,7 @@ import Apple from "./apple.png";
 import ID from "./account.png";
 import Pass from "./padlock.png";
 const Container = styled.div`
-  background-color: #5470A6; //change to your own color
+  background-color: #5470a6; //change to your own color
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,15 +20,28 @@ const LogoIcon = styled.img`
 `;
 
 const Title = styled.div`
-  color: #A6C4FF; //
+  color: #a6c4ff; //
   font-size: 5.5vw; //change
   margin-bottom: 0.7vw;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
 `;
 const IDIcon = styled.img`
   width: 30px;
   height: 30px;
   margin-bottom: 0.4vw;
-  `
+  filter: invert(82%) sepia(54%) saturate(3781%) hue-rotate(192deg)
+    brightness(108%) contrast(101%);
+`;
+
+const Input = styled.input`
+  width: 200px;
+`;
 const Paragraph = styled.div`
   color: yellow;
   font-size: 24px;
@@ -38,8 +51,14 @@ function LoginPage() {
     <Container>
       <LogoIcon src={Apple} />
       <Title>LogIn</Title>
-      <IDIcon src={ID}/>
-      <IDIcon src={Pass}/>
+      <Wrapper>
+        <IDIcon src={ID} />
+        <Input></Input>
+      </Wrapper>
+      <Wrapper>
+        <IDIcon src={Pass} />
+        <Input />
+      </Wrapper>
       <Paragraph>Hello this is Andrew</Paragraph>
     </Container>
   );
