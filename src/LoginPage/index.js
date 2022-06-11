@@ -23,6 +23,7 @@ const Title = styled.div`
   color: #c4a8e1; //
   font-size: 5.5vw; //change
   margin-bottom: 0.7vw;
+  font-family: "Itim", cursive;
 `;
 
 const Wrapper = styled.div`
