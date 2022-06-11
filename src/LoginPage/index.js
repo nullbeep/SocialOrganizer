@@ -58,7 +58,7 @@ const Input = styled.input`
 const EyeIcon = styled.img`
   width: 35px;
   height: 35px;
-  margin-left: 100px;
+  margin-left: 110px;
   position: absolute;
   filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
     brightness(90%) contrast(97%);
