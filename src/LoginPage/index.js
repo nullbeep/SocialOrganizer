@@ -55,18 +55,24 @@ const Input = styled.input`
   padding: 7px;
 `;
 const EyeIcon = styled.img`
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   margin-bottom: 0.4vw;
-  margin-left: 15px;
+  margin-left: -50px;
+  /* margin-left: 15px; */
   filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
     brightness(90%) contrast(97%);
-`
+`;
 const Paragraph = styled.div`
   color: #c4a8e1;
   font-size: 20px;
 `;
 function LoginPage() {
+  const [showPassword, setShowPassord] = useState(false);
+
+  const changePasswordStatus = () => {
+    setShowPassord(!showPassword);
+  };
   return (
     <Container>
       <LogoIcon src={Apple} />
@@ -77,8 +83,12 @@ function LoginPage() {
       </Wrapper>
       <Wrapper>
         <IDIcon src={Pass} />
-        <Input type="password" />
-        <EyeIcon src={Eye}/>
+        <Input type={showPassword ? "text" : "password"} />
+        {showPassword ? (
+          <EyeIcon src={Eye} onClick={changePasswordStatus} />
+        ) : (
+          <EyeIcon src={Eyeclose} onClick={changePasswordStatus} />
+        )}
       </Wrapper>
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
