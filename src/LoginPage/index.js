@@ -10,7 +10,10 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   /* justify-content: center; */
+=======
+>>>>>>> fde709d92f7014eb4a649eee622b9687edad77e6
   /* margin-top: 300px; */
   align-items: center;
 `;
@@ -18,7 +21,11 @@ const Container = styled.div`
 const LogoIcon = styled.img`
   width: 150px; //change
   height: 150px; // change
+<<<<<<< HEAD
   margin-top: 3vw; // change
+=======
+  margin-top: 7vw; // change
+>>>>>>> fde709d92f7014eb4a649eee622b9687edad77e6
 `;
 
 const Title = styled.div`
@@ -66,6 +73,7 @@ const EyeIcon = styled.img`
 const Paragraph = styled.div`
   color: #c4a8e1;
   font-size: 20px;
+  font-family: "Itim", cursive;
 `;
 function LoginPage() {
   const [showPassword, setShowPassord] = useState(false);
@@ -76,7 +84,7 @@ function LoginPage() {
   return (
     <Container>
       <LogoIcon src={Apple} />
-      <Title>LogIn</Title>
+      <Title>Login</Title>
       <Wrapper>
         <IDIcon src={ID} />
         <Input></Input>
