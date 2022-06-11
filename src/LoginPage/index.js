@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   /* margin-top: 300px; */
   align-items: center;
 `;
@@ -18,7 +18,7 @@ const Container = styled.div`
 const LogoIcon = styled.img`
   width: 150px; //change
   height: 150px; // change
-  margin-top: 3vw; // change
+  /* margin-top: 3vw; // change */
 `;
 
 const Title = styled.div`
