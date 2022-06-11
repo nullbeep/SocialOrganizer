@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Apple from "./apple.png";
 import ID from "./account.png";
 import Pass from "./padlock.png";
+import Eye from "./eye.png";
+import Eyeclose from "./eyeclose.png";
 const Container = styled.div`
   background-color: #406754; //change to your own color
   height: 100vh;
@@ -52,6 +54,14 @@ const Input = styled.input`
   font-size: 20px;
   padding: 7px;
 `;
+const EyeIcon = styled.img`
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0.4vw;
+  margin-left: 15px;
+  filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
+    brightness(90%) contrast(97%);
+`
 const Paragraph = styled.div`
   color: #c4a8e1;
   font-size: 20px;
@@ -68,6 +78,7 @@ function LoginPage() {
       <Wrapper>
         <IDIcon src={Pass} />
         <Input type="password" />
+        <EyeIcon src={Eye}/>
       </Wrapper>
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
