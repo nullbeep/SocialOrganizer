@@ -10,7 +10,6 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   /* margin-top: 300px; */
   align-items: center;
 `;
@@ -18,7 +17,7 @@ const Container = styled.div`
 const LogoIcon = styled.img`
   width: 150px; //change
   height: 150px; // change
-  /* margin-top: 3vw; // change */
+  margin-top: 7vw; // change
 `;
 
 const Title = styled.div`
@@ -66,6 +65,7 @@ const EyeIcon = styled.img`
 const Paragraph = styled.div`
   color: #c4a8e1;
   font-size: 20px;
+  font-family: "Itim", cursive;
 `;
 function LoginPage() {
   const [showPassword, setShowPassord] = useState(false);
@@ -76,7 +76,7 @@ function LoginPage() {
   return (
     <Container>
       <LogoIcon src={Apple} />
-      <Title>LogIn</Title>
+      <Title>Login</Title>
       <Wrapper>
         <IDIcon src={ID} />
         <Input></Input>
