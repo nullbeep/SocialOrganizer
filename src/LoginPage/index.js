@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   align-items: center;
+  width: 500px;
 `;
 const IDIcon = styled.img`
   width: 45px;
@@ -57,9 +58,8 @@ const Input = styled.input`
 const EyeIcon = styled.img`
   width: 35px;
   height: 35px;
-  //margin-bottom: 0.4vw;
-  margin-left: -50px;
-  /* margin-left: 15px; */
+  margin-left: 100px;
+  position: absolute;
   filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
     brightness(90%) contrast(97%);
 `;
