@@ -30,6 +30,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
+  align-items: center;
 `;
 const IDIcon = styled.img`
   width: 30px;
