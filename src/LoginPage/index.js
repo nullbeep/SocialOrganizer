@@ -20,7 +20,7 @@ const LogoIcon = styled.img`
 `;
 
 const Title = styled.div`
-  color: #C4A8E1; //
+  color: #c4a8e1; //
   font-size: 5.5vw; //change
   margin-bottom: 0.7vw;
 `;
@@ -29,11 +29,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-<<<<<<< HEAD
   margin-bottom: 20px;
-=======
-  margin-bottom: 15px;
->>>>>>> 80eabe8eb4a56a7099d6a2806cfae8b1eb773f83
   align-items: center;
 `;
 const IDIcon = styled.img`
@@ -41,22 +37,22 @@ const IDIcon = styled.img`
   height: 45px;
   margin-bottom: 0.4vw;
   margin-right: 15px;
-  filter: invert(82%) sepia(54%) saturate(3781%) hue-rotate(192deg)
-    brightness(108%) contrast(101%);
+  filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
+    brightness(90%) contrast(97%);
 `;
 
 const Input = styled.input`
   width: 200px;
   background-color: #406754;
   border-radius: 200px;
-  border: 3px #C4A8E1 solid;
+  border: 3px #c4a8e1 solid;
   color: #e1a8ba;
   height: 20px;
   font-size: 20px;
   padding: 7px;
 `;
 const Paragraph = styled.div`
-  color: #C4A8E1;
+  color: #c4a8e1;
   font-size: 20px;
 `;
 function LoginPage() {
