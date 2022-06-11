@@ -67,7 +67,7 @@ function LoginPage() {
       </Wrapper>
       <Wrapper>
         <IDIcon src={Pass} />
-        <Input />
+        <Input type="password" />
       </Wrapper>
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
