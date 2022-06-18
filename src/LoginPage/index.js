@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useHistory, useLocation } from "react-router-dom";
+
 import Apple from "./apple.png";
 import ID from "./account.png";
 import Pass from "./padlock.png";
 import Eye from "./eye.png";
 import Eyeclose from "./eyeclose.png";
+import Arrow from "./next.png";
+
 const Container = styled.div`
   background-color: #406754; //change to your own color
   height: 100vh;
@@ -68,11 +72,42 @@ const Paragraph = styled.div`
   font-size: 20px;
   font-family: "Itim", cursive;
 `;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+`;
+const Button = styled.button`
+  background-color: #c4a8e1;
+  border-radius: 20px;
+
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+`;
+
+const ArrowIcon = styled.img`
+  width: 30px;
+  position: absolute;
+  margin-left: 70px;
+`;
 function LoginPage() {
+  const history = useHistory();
+
   const [showPassword, setShowPassord] = useState(false);
 
   const changePasswordStatus = () => {
     setShowPassord(!showPassword);
+  };
+
+  const navigateToMainPage = () => {
+    history.push({
+      pathname: "/main",
+    });
   };
   return (
     <Container>
@@ -93,6 +128,10 @@ function LoginPage() {
       </Wrapper>
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
+      <ButtonWrapper onClick={navigateToMainPage}>
+        <Button>Login</Button>
+        <ArrowIcon src={Arrow} />
+      </ButtonWrapper>
     </Container>
   );
 }
