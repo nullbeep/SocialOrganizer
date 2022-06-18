@@ -80,20 +80,13 @@ const ButtonWrapper = styled.div`
   align-items: center;
   margin-top: 30px;
 `;
-const Button = styled.button`
-  background-color: #c4a8e1;
-  border-radius: 20px;
-
-  width: 200px;
-  height: 50px;
-  border: none;
-  font-size: 20px;
-`;
 
 const ArrowIcon = styled.img`
-  width: 30px;
+  width: 45px;
   position: absolute;
-  margin-left: 70px;
+  //margin-left: 70px;
+  filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
+    brightness(90%) contrast(97%);
 `;
 function LoginPage() {
   const history = useHistory();
@@ -129,7 +122,6 @@ function LoginPage() {
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
       <ButtonWrapper onClick={navigateToMainPage}>
-        <Button>Login</Button>
         <ArrowIcon src={Arrow} />
       </ButtonWrapper>
     </Container>
