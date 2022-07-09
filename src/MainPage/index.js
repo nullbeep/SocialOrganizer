@@ -4,32 +4,40 @@ import Apple from "./apple.png";
 import Settings from "./settings.png";
 
 const Container = styled.div`
-  background-color: #406754; 
+  background-color: #406754;
   height: 100vh;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  /* align-items: center; */
 `;
+
 const LogoIcon = styled.img`
   width: 125px; //change
   height: 125px; // change
   margin-top: 5vw; // change
+  align-self: center;
 `;
 
 const SettingsIcon = styled.img`
-width: 75px;
-height: 75px;
+  width: 75px;
+  height: 75px;
+  align-self: flex-end;
+  position: absolute;
+  margin-top: 50px;
 
-filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
+  /* margin-right: 100px; */
+  filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
     brightness(90%) contrast(97%);
-`
+`;
 
 function MainPage() {
-  
-return(
-<Container>
+  return (
+    <Container>
       <LogoIcon src={Apple} />
       <SettingsIcon src={Settings} />
-</Container>
-)
-
+    </Container>
+  );
 }
 export default MainPage;
