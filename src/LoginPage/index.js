@@ -129,7 +129,6 @@ function LoginPage() {
       <Paragraph>Forgot your password?</Paragraph>
       <Paragraph>Don't have an account? Sign up!</Paragraph>
       <ButtonWrapper onClick={navigateToMainPage}>
-        <Button>Login</Button>
         <ArrowIcon src={Arrow} />
       </ButtonWrapper>
     </Container>
