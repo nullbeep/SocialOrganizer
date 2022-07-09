@@ -9,14 +9,14 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-
+  padding-right: 30px;
   /* align-items: center; */
 `;
 
 const LogoIcon = styled.img`
   width: 125px; //change
   height: 125px; // change
-  margin-top: 5vw; // change
+  margin-top: 15px; // change
   align-self: center;
 `;
 
@@ -25,18 +25,25 @@ const SettingsIcon = styled.img`
   height: 75px;
   align-self: flex-end;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 30px;
 
   /* margin-right: 100px; */
   filter: invert(91%) sepia(24%) saturate(3490%) hue-rotate(193deg)
     brightness(90%) contrast(97%);
 `;
 
+const GroupButton = styled.button`
+width: 150px;
+height: 150px;
+
+`
+
 function MainPage() {
   return (
     <Container>
       <LogoIcon src={Apple} />
       <SettingsIcon src={Settings} />
+      <GroupButton>GroupButton</GroupButton>
     </Container>
   );
 }
