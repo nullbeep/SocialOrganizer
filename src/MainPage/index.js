@@ -32,7 +32,6 @@ const Footer = styled.div`
   margin-left: 30px;
   display: flex;
   flex-direction: row;
-  padding: 100px;
 `;
 
 const LogoIcon = styled.img`
