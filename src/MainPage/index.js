@@ -5,6 +5,7 @@ import Settings from "./settings.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
 const Container = styled.div`
   background-color: #406754;
