@@ -55,7 +55,14 @@ const GroupButton = styled.button`
 const AddButton = styled.button`
   width: 150px;
   height: 50px;
+  margin-left: 30px;
 `;
+
+const ManageButton = styled.button`
+width: 150px;
+height: 50px;
+margin-left: 30px;
+`
 
 function MainPage() {
   return (
@@ -69,6 +76,7 @@ function MainPage() {
       </Body>
       <Footer>
         <AddButton>Add</AddButton>
+        <ManageButton>Manage</ManageButton>
       </Footer>
     </Container>
   );
