@@ -57,6 +57,11 @@ const GroupButton = styled.button`
   width: 150px;
   height: 150px;
   margin-left: 30px;
+  border-radius: 20px;
+  background-color: #c4a8e1;
+  color: #406754;
+  border: 0px #406754 solid;
+  font-size: 20px;
 `;
 
 const ManageButton = styled.button`
@@ -66,7 +71,7 @@ const ManageButton = styled.button`
 `;
 
 const AddButton = styled.button`
-  background-color: #3498db;
+  background-color: #c4a8e1;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -83,8 +88,8 @@ const DropDownContainer = styled.div`
 const DropDownElementContainer = styled.div`
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #406754;
+  min-width: 150px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -101,14 +106,12 @@ function MainPage() {
       </Body>
       <Footer>
         <DropdownButton id="dropdown-basic-button" title="Add">
-          <Dropdown.Item href="#/action-1">Person</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Group</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Item href="#/action-1">Group</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Person</Dropdown.Item>
         </DropdownButton>
         <DropdownButton id="dropdown-basic-button" title="Manage">
-          <Dropdown.Item href="#/action-1">Edit</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Delete</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Edit</Dropdown.Item>
+          <Dropdown.Item href="#/action-4">Delete</Dropdown.Item>
         </DropdownButton>
 
         {/* <ManageButton>Manage</ManageButton> */}
