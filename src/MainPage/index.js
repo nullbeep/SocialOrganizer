@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Apple from "./apple.png";
 import Settings from "./settings.png";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Container = styled.div`
   background-color: #406754;
@@ -52,18 +55,35 @@ const GroupButton = styled.button`
   margin-left: 30px;
 `;
 
-const AddButton = styled.button`
+const ManageButton = styled.button`
   width: 150px;
   height: 50px;
   margin-left: 30px;
 `;
 
-const ManageButton = styled.button`
-width: 150px;
-height: 50px;
-margin-left: 30px;
-`
+const AddButton = styled.button`
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+`;
 
+const DropDownContainer = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+const DropDownElementContainer = styled.div`
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+`;
 function MainPage() {
   return (
     <Container>
@@ -75,8 +95,13 @@ function MainPage() {
         <GroupButton>GroupButton</GroupButton>
       </Body>
       <Footer>
-        <AddButton>Add</AddButton>
-        <ManageButton>Manage</ManageButton>
+        <DropdownButton id="dropdown-basic-button" title="Add">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+
+        {/* <ManageButton>Manage</ManageButton> */}
       </Footer>
     </Container>
   );
