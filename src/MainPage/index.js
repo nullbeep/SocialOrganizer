@@ -28,6 +28,10 @@ const Body = styled.div`
 
 const Footer = styled.div`
   height: 10%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
 `;
 
 const LogoIcon = styled.img`
@@ -68,6 +72,7 @@ const AddButton = styled.button`
   font-size: 16px;
   border: none;
   cursor: pointer;
+  margin-right: 30px;
 `;
 
 const DropDownContainer = styled.div`
@@ -96,8 +101,13 @@ function MainPage() {
       </Body>
       <Footer>
         <DropdownButton id="dropdown-basic-button" title="Add">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-1">Person</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Group</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+        <DropdownButton id="dropdown-basic-button" title="Manage">
+          <Dropdown.Item href="#/action-1">Edit</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Delete</Dropdown.Item>
           <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
         </DropdownButton>
 

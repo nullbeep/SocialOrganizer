@@ -50,14 +50,14 @@ const IDIcon = styled.img`
 `;
 
 const Input = styled.input`
-  width: 200px;
+  width: 225px;
   background-color: #406754;
   border-radius: 200px;
   border: 3px #c4a8e1 solid;
   color: #e1a8ba;
-  height: 20px;
+  height: 40px;
   font-size: 20px;
-  padding: 7px;
+  padding: 9px;
 `;
 const EyeIcon = styled.img`
   width: 35px;
